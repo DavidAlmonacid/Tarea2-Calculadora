@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Tarea1"
+rootProject.name = "Tarea2"
 include(":app")
