@@ -258,7 +258,7 @@
 
             <Button
                 android:id="@+id/btn_equals"
-                android:layout_width="72dp"
+                android:layout_width="0dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="13.2dp"
                 android:layout_weight="1"
