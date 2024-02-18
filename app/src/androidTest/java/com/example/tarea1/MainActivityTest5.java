@@ -22,6 +22,7 @@ import androidx.test.filters.LargeTest;
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeMatcher;
+import org.hamcrest.core.IsInstanceOf;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -40,9 +41,9 @@ public class MainActivityTest5 {
                 allOf(withId(R.id.btn_1), withText("1"),
                         childAtPosition(
                                 childAtPosition(
-                                        withId(android.R.id.content),
-                                        0),
-                                3),
+                                        withId(R.id.linearLayout2),
+                                        3),
+                                0),
                         isDisplayed()));
         materialButton.perform(click());
 
@@ -50,8 +51,8 @@ public class MainActivityTest5 {
                 allOf(withId(R.id.btn_0), withText("0"),
                         childAtPosition(
                                 childAtPosition(
-                                        withId(android.R.id.content),
-                                        0),
+                                        withId(R.id.linearLayout2),
+                                        4),
                                 0),
                         isDisplayed()));
         materialButton2.perform(click());
@@ -60,9 +61,9 @@ public class MainActivityTest5 {
                 allOf(withId(R.id.btn_divide), withText("÷"),
                         childAtPosition(
                                 childAtPosition(
-                                        withId(android.R.id.content),
+                                        withId(R.id.linearLayout2),
                                         0),
-                                18),
+                                3),
                         isDisplayed()));
         materialButton3.perform(click());
 
@@ -70,9 +71,9 @@ public class MainActivityTest5 {
                 allOf(withId(R.id.btn_2), withText("2"),
                         childAtPosition(
                                 childAtPosition(
-                                        withId(android.R.id.content),
-                                        0),
-                                4),
+                                        withId(R.id.linearLayout2),
+                                        3),
+                                1),
                         isDisplayed()));
         materialButton4.perform(click());
 
@@ -80,8 +81,8 @@ public class MainActivityTest5 {
                 allOf(withId(R.id.btn_dot), withText("."),
                         childAtPosition(
                                 childAtPosition(
-                                        withId(android.R.id.content),
-                                        0),
+                                        withId(R.id.linearLayout2),
+                                        4),
                                 1),
                         isDisplayed()));
         materialButton5.perform(click());
@@ -90,15 +91,15 @@ public class MainActivityTest5 {
                 allOf(withId(R.id.btn_5), withText("5"),
                         childAtPosition(
                                 childAtPosition(
-                                        withId(android.R.id.content),
-                                        0),
-                                8),
+                                        withId(R.id.linearLayout2),
+                                        2),
+                                1),
                         isDisplayed()));
         materialButton6.perform(click());
 
         ViewInteraction textView = onView(
                 allOf(withId(R.id.tv_input), withText("10÷2.5"),
-                        withParent(withParent(withId(android.R.id.content))),
+                        withParent(withParent(IsInstanceOf.<View>instanceOf(android.view.ViewGroup.class))),
                         isDisplayed()));
         textView.check(matches(withText("10÷2.5")));
     }
