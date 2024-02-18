@@ -23,7 +23,9 @@
                 <map>
                   <entry key="Duration" value="128" />
                   <entry key="Medium_Phone_API_28" value="157" />
+                  <entry key="Pixel_5_API_28" value="120" />
                   <entry key="Tests" value="398" />
+                  <entry key="Xiaomi M2006C3LG" value="120" />
                 </map>
               </option>
             </AndroidTestResultsTableState>
