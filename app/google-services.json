@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "79303863284",
+    "project_id": "calculatorapp-67a69",
+    "storage_bucket": "calculatorapp-67a69.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79303863284:android:8f4ffb87ed170acd7867a1",
+        "android_client_info": {
+          "package_name": "com.example.tarea1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9nTn7lcQig-aakEjXG_vbcQydl53Kjj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
